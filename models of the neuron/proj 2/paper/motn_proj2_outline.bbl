@@ -1,0 +1,40 @@
+\begin{thebibliography}{1}
+
+\bibitem{Chalfie1985}
+M~Chalfie, J~E Sulston, J~G White, E~Southgate, J~N Thomson, and S~Brenner.
+\newblock {The neural circuit for touch sensitivity in Caenorhabditis elegans.}
+\newblock {\em The Journal of neuroscience : the official journal of the
+  Society for Neuroscience}, 5(4):956--64, April 1985.
+
+\bibitem{Dunn2003}
+N.A. Dunn, J.S. Conery, and S.R. Lockery.
+\newblock {A neural network model for chemotaxis in Caenorhabditis elegans}.
+\newblock {\em Proceedings of the International Joint Conference on Neural
+  Networks, 2003.}, 4, 2003.
+
+\bibitem{Kunert2014}
+James Kunert, Eli Shlizerman, and J.~Nathan Kutz.
+\newblock {Low-dimensional functionality of complex network dynamics:
+  Neurosensory integration in the Caenorhabditis elegans}.
+\newblock {\em Physical Review E}, 89(5):052805, May 2014.
+
+\bibitem{Prinz2004}
+Astrid~A Prinz, Dirk Bucher, and Eve Marder.
+\newblock {Similar network activity from disparate circuit parameters.}
+\newblock {\em Nature neuroscience}, 7(12):1345--52, December 2004.
+
+\bibitem{Varshney2011}
+Lav~R Varshney, Beth~L Chen, Eric Paniagua, David~H Hall, and Dmitri~B
+  Chklovskii.
+\newblock {Structural properties of the Caenorhabditis elegans neuronal
+  network.}
+\newblock {\em PLoS computational biology}, 7(2):e1001066, January 2011.
+
+\bibitem{White1986}
+J.~G. White, E.~Southgate, J.~N. Thomson, and S.~Brenner.
+\newblock {The Structure of the Nervous System of the Nematode Caenorhabditis
+  elegans}.
+\newblock {\em Philosophical Transactions of the Royal Society B: Biological
+  Sciences}, 314(1165):1--340, November 1986.
+
+\end{thebibliography}

@@ -1,0 +1,867 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.5.25)  3 NOV 2014 19:11
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**motn_project1_gkiar.tex
+(./motn_project1_gkiar.tex
+LaTeX2e <2014/05/01>
+Babel <3.9k> and hyphenation patterns for 78 languages loaded.
+(/usr/local/texlive/2014/texmf-dist/tex/latex/base/report.cls
+Document Class: report 2007/10/19 v1.4h Standard LaTeX document class
+(/usr/local/texlive/2014/texmf-dist/tex/latex/base/size10.clo
+File: size10.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
+)
+\c@part=\count79
+\c@chapter=\count80
+\c@section=\count81
+\c@subsection=\count82
+\c@subsubsection=\count83
+\c@paragraph=\count84
+\c@subparagraph=\count85
+\c@figure=\count86
+\c@table=\count87
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+)
+(/usr/local/texlive/2014/texmf-dist/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2013/01/14 v2.14 AMS math features
+\@mathmargin=\skip43
+
+For additional information on amsmath, use the `?' option.
+(/usr/local/texlive/2014/texmf-dist/tex/latex/amsmath/amstext.sty
+Package: amstext 2000/06/29 v2.01
+
+(/usr/local/texlive/2014/texmf-dist/tex/latex/amsmath/amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0
+\@emptytoks=\toks14
+\ex@=\dimen103
+))
+(/usr/local/texlive/2014/texmf-dist/tex/latex/amsmath/amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d
+\pmbraise@=\dimen104
+)
+(/usr/local/texlive/2014/texmf-dist/tex/latex/amsmath/amsopn.sty
+Package: amsopn 1999/12/14 v2.01 operator names
+)
+\inf@bad=\count88
+LaTeX Info: Redefining \frac on input line 210.
+\uproot@=\count89
+\leftroot@=\count90
+LaTeX Info: Redefining \overline on input line 306.
+\classnum@=\count91
+\DOTSCASE@=\count92
+LaTeX Info: Redefining \ldots on input line 378.
+LaTeX Info: Redefining \dots on input line 381.
+LaTeX Info: Redefining \cdots on input line 466.
+\Mathstrutbox@=\box26
+\strutbox@=\box27
+\big@size=\dimen105
+LaTeX Font Info:    Redeclaring font encoding OML on input line 566.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 567.
+\macc@depth=\count93
+\c@MaxMatrixCols=\count94
+\dotsspace@=\muskip10
+\c@parentequation=\count95
+\dspbrk@lvl=\count96
+\tag@help=\toks15
+\row@=\count97
+\column@=\count98
+\maxfields@=\count99
+\andhelp@=\toks16
+\eqnshift@=\dimen106
+\alignsep@=\dimen107
+\tagshift@=\dimen108
+\tagwidth@=\dimen109
+\totwidth@=\dimen110
+\lineht@=\dimen111
+\@envbody=\toks17
+\multlinegap=\skip44
+\multlinetaggap=\skip45
+\mathdisplay@stack=\toks18
+LaTeX Info: Redefining \[ on input line 2665.
+LaTeX Info: Redefining \] on input line 2666.
+)
+(/usr/local/texlive/2014/texmf-dist/tex/latex/amsmath/amscd.sty
+Package: amscd 1999/11/29 v2.0
+\athelp@=\toks19
+\minaw@=\dimen112
+\bigaw@=\dimen113
+\minCDarrowwidth=\dimen114
+)
+(/usr/local/texlive/2014/texmf-dist/tex/latex/amsfonts/amssymb.sty
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
+
+(/usr/local/texlive/2014/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+))
+(/usr/local/texlive/2014/texmf-dist/tex/latex/tools/array.sty
+Package: array 2008/09/09 v2.4c Tabular extension package (FMi)
+\col@sep=\dimen115
+\extrarowheight=\dimen116
+\NC@list=\toks20
+\extratabsurround=\skip46
+\backup@length=\skip47
+)
+(/usr/local/texlive/2014/texmf-dist/tex/latex/base/latexsym.sty
+Package: latexsym 1998/08/17 v2.2e Standard LaTeX package (lasy symbols)
+\symlasy=\mathgroup6
+LaTeX Font Info:    Overwriting symbol font `lasy' in version `bold'
+(Font)                  U/lasy/m/n --> U/lasy/b/n on input line 47.
+)
+(/usr/local/texlive/2014/texmf-dist/tex/latex/amsfonts/euscript.sty
+Package: euscript 2009/06/22 v3.00 Euler Script fonts
+LaTeX Font Info:    Overwriting math alphabet `\EuScript' in version `bold'
+(Font)                  U/eus/m/n --> U/eus/b/n on input line 33.
+)
+(/usr/local/texlive/2014/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2014/04/25 v1.0g Enhanced LaTeX Graphics (DPC,SPQR)
+
+(/usr/local/texlive/2014/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2014/05/08 v1.15 key=value parser (DPC)
+\KV@toks@=\toks21
+)
+(/usr/local/texlive/2014/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
+
+(/usr/local/texlive/2014/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
+)
+(/usr/local/texlive/2014/texmf-dist/tex/latex/latexconfig/graphics.cfg
+File: graphics.cfg 2010/04/23 v1.9 graphics configuration of TeX Live
+)
+Package graphics Info: Driver file: pdftex.def on input line 91.
+
+(/usr/local/texlive/2014/texmf-dist/tex/latex/pdftex-def/pdftex.def
+File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
+
+(/usr/local/texlive/2014/texmf-dist/tex/generic/oberdiek/infwarerr.sty
+Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
+)
+(/usr/local/texlive/2014/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
+Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
+)
+\Gread@gobject=\count100
+))
+\Gin@req@height=\dimen117
+\Gin@req@width=\dimen118
+)
+(/usr/local/texlive/2014/texmf-dist/tex/latex/subfig/subfig.sty
+Package: subfig 2005/06/28 ver: 1.3 subfig package
+
+(/usr/local/texlive/2014/texmf-dist/tex/latex/caption/caption.sty
+Package: caption 2013/05/02 v3.3-89 Customizing captions (AR)
+
+(/usr/local/texlive/2014/texmf-dist/tex/latex/caption/caption3.sty
+Package: caption3 2013/05/02 v1.6-88 caption3 kernel (AR)
+Package caption3 Info: TeX engine: e-TeX on input line 57.
+\captionmargin=\dimen119
+\captionmargin@=\dimen120
+\captionwidth=\dimen121
+\caption@tempdima=\dimen122
+\caption@indent=\dimen123
+\caption@parindent=\dimen124
+\caption@hangindent=\dimen125
+)
+\c@ContinuedFloat=\count101
+)
+\c@KVtest=\count102
+\sf@farskip=\skip48
+\sf@captopadj=\dimen126
+\sf@capskip=\skip49
+\sf@nearskip=\skip50
+\c@subfigure=\count103
+\c@subfigure@save=\count104
+\c@lofdepth=\count105
+\c@subtable=\count106
+\c@subtable@save=\count107
+\c@lotdepth=\count108
+\sf@top=\skip51
+\sf@bottom=\skip52
+)
+(/usr/local/texlive/2014/texmf-dist/tex/latex/wrapfig/wrapfig.sty
+\wrapoverhang=\dimen127
+\WF@size=\dimen128
+\c@WF@wrappedlines=\count109
+\WF@box=\box28
+\WF@everypar=\toks22
+Package: wrapfig 2003/01/31  v 3.6
+)
+(/usr/local/texlive/2014/texmf-dist/tex/latex/psnfss/times.sty
+Package: times 2005/04/12 PSNFSS-v9.2a (SPQR) 
+)
+(/usr/local/texlive/2014/texmf-dist/tex/latex/psfrag/psfrag.sty
+Package: psfrag 1998/04/11 v3.04 PSfrag (MCG)
+\pfg@pcount=\count110
+\pfg@scount=\count111
+\pfg@temp=\write3
+)
+(/usr/local/texlive/2014/texmf-dist/tex/latex/graphics/epsfig.sty
+Package: epsfig 1999/02/16 v1.7a (e)psfig emulation (SPQR)
+\epsfxsize=\dimen129
+\epsfysize=\dimen130
+)
+(/usr/local/texlive/2014/texmf-dist/tex/latex/tools/verbatim.sty
+Package: verbatim 2003/08/22 v1.5q LaTeX2e package for verbatim enhancements
+\every@verbatim=\toks23
+\verbatim@line=\toks24
+\verbatim@in@stream=\read1
+)
+(/usr/local/texlive/2014/texmf-dist/tex/latex/tools/tabularx.sty
+Package: tabularx 2014/05/13 v2.10 `tabularx' package (DPC)
+\TX@col@width=\dimen131
+\TX@old@table=\dimen132
+\TX@old@col=\dimen133
+\TX@target=\dimen134
+\TX@delta=\dimen135
+\TX@cols=\count112
+\TX@ftn=\toks25
+)
+(/usr/local/texlive/2014/texmf-dist/tex/latex/pdfpages/pdfpages.sty
+Package: pdfpages 2013/08/25 v0.4v Insert pages of external PDF documents (AM)
+
+(/usr/local/texlive/2014/texmf-dist/tex/latex/base/ifthen.sty
+Package: ifthen 2001/05/26 v1.1c Standard LaTeX ifthen package (DPC)
+)
+(/usr/local/texlive/2014/texmf-dist/tex/latex/tools/calc.sty
+Package: calc 2007/08/22 v4.3 Infix arithmetic (KKT,FJ)
+\calc@Acount=\count113
+\calc@Bcount=\count114
+\calc@Adimen=\dimen136
+\calc@Bdimen=\dimen137
+\calc@Askip=\skip53
+\calc@Bskip=\skip54
+LaTeX Info: Redefining \setlength on input line 75.
+LaTeX Info: Redefining \addtolength on input line 76.
+\calc@Ccount=\count115
+\calc@Cskip=\skip55
+)
+(/usr/local/texlive/2014/texmf-dist/tex/latex/eso-pic/eso-pic.sty
+Package: eso-pic 2013/10/06 v2.0d eso-pic (RN)
+
+(/usr/local/texlive/2014/texmf-dist/tex/generic/oberdiek/atbegshi.sty
+Package: atbegshi 2011/10/05 v1.16 At begin shipout hook (HO)
+
+(/usr/local/texlive/2014/texmf-dist/tex/generic/oberdiek/ifpdf.sty
+Package: ifpdf 2011/01/30 v2.3 Provides the ifpdf switch (HO)
+Package ifpdf Info: pdfTeX in PDF mode is detected.
+))
+(/usr/local/texlive/2014/texmf-dist/tex/latex/xcolor/xcolor.sty
+Package: xcolor 2007/01/21 v2.11 LaTeX color extensions (UK)
+
+(/usr/local/texlive/2014/texmf-dist/tex/latex/latexconfig/color.cfg
+File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
+)
+Package xcolor Info: Driver file: pdftex.def on input line 225.
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1337.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1341.
+Package xcolor Info: Model `RGB' extended on input line 1353.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1355.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1356.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1357.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1358.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1359.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1360.
+))
+(/usr/local/texlive/2014/texmf-dist/tex/latex/pdfpages/pppdftex.def
+File: pppdftex.def 2013/08/25 v0.4v Pdfpages driver for pdfTeX (AM)
+)
+\AM@pagebox=\box29
+\AM@toc@title=\toks26
+\c@AM@survey=\count116
+\AM@templatesizebox=\box30
+)
+(./motn_project1_gkiar.aux)
+\openout1 = `motn_project1_gkiar.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Try loading font information for OT1+ptm on input line 24.
+
+(/usr/local/texlive/2014/texmf-dist/tex/latex/psnfss/ot1ptm.fd
+File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
+)
+(/usr/local/texlive/2014/texmf-dist/tex/context/base/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count117
+\scratchdimen=\dimen138
+\scratchbox=\box31
+\nofMPsegments=\count118
+\nofMParguments=\count119
+\everyMPshowfont=\toks27
+\MPscratchCnt=\count120
+\MPscratchDim=\dimen139
+\MPnumerator=\count121
+\makeMPintoPDFobject=\count122
+\everyMPtoPDFconversion=\toks28
+) (/usr/local/texlive/2014/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
+Package: pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO
+)
+
+(/usr/local/texlive/2014/texmf-dist/tex/generic/oberdiek/ifluatex.sty
+Package: ifluatex 2010/03/01 v1.3 Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX not detected.
+)
+Package pdftexcmds Info: LuaTeX not detected.
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+)
+(/usr/local/texlive/2014/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
+Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
+
+(/usr/local/texlive/2014/texmf-dist/tex/latex/oberdiek/grfext.sty
+Package: grfext 2010/08/19 v1.1 Manage graphics extensions (HO)
+
+(/usr/local/texlive/2014/texmf-dist/tex/generic/oberdiek/kvdefinekeys.sty
+Package: kvdefinekeys 2011/04/07 v1.3 Define keys (HO)
+))
+(/usr/local/texlive/2014/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+Package: kvoptions 2011/06/30 v3.11 Key value format for package options (HO)
+
+(/usr/local/texlive/2014/texmf-dist/tex/generic/oberdiek/kvsetkeys.sty
+Package: kvsetkeys 2012/04/25 v1.16 Key value parser (HO)
+
+(/usr/local/texlive/2014/texmf-dist/tex/generic/oberdiek/etexcmds.sty
+Package: etexcmds 2011/02/16 v1.5 Avoid name clashes with e-TeX commands (HO)
+Package etexcmds Info: Could not find \expanded.
+(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
+(etexcmds)             that some package has redefined \expanded.
+(etexcmds)             In the latter case, load this package earlier.
+)))
+Package grfext Info: Graphics extension search list:
+(grfext)             [.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPE
+G,.JBIG2,.JB2,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 452.
+
+(/usr/local/texlive/2014/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
+e
+))
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: subfig package v1.3 is loaded.
+Package caption Info: wrapfig package is loaded.
+Package caption Info: End \AtBeginDocument code.
+\AtBeginShipoutBox=\box32
+LaTeX Font Info:    Try loading font information for U+msa on input line 29.
+
+(/usr/local/texlive/2014/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 29.
+
+(/usr/local/texlive/2014/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+LaTeX Font Info:    Try loading font information for U+lasy on input line 29.
+
+(/usr/local/texlive/2014/texmf-dist/tex/latex/base/ulasy.fd
+File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
+) [1
+Non-PDF special ignored!
+
+{/usr/local/texlive/2014/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
+LaTeX Font Info:    Try loading font information for OMS+ptm on input line 38.
+ (/usr/local/texlive/2014/texmf-dist/tex/latex/psnfss/omsptm.fd
+File: omsptm.fd 
+)
+LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <10> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 38.
+LaTeX Font Info:    Try loading font information for OT1+pcr on input line 48.
+ (/usr/local/texlive/2014/texmf-dist/tex/latex/psnfss/ot1pcr.fd
+File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
+)
+<motnq2.png, id=7, 562.1pt x 421.575pt>
+File: motnq2.png Graphic file (type png)
+ <use motnq2.png>
+Package pdftex.def Info: motnq2.png used on input line 48.
+(pdftex.def)             Requested size: 370.98715pt x 278.24036pt.
+
+Overfull \hbox (25.98715pt too wide) in paragraph at lines 48--48
+[][] 
+ []
+
+[1] [2 <./motnq2.png (PNG copy)>]
+Underfull \hbox (badness 10000) in paragraph at lines 55--57
+
+ []
+
+<motnq5.png, id=20, 974.64125pt x 656.4525pt>
+File: motnq5.png Graphic file (type png)
+ <use motnq5.png>
+Package pdftex.def Info: motnq5.png used on input line 73.
+(pdftex.def)             Requested size: 350.87057pt x 236.32272pt.
+
+Overfull \hbox (5.87057pt too wide) in paragraph at lines 73--73
+[][] 
+ []
+
+[3]
+Underfull \hbox (badness 10000) in paragraph at lines 74--79
+
+ []
+
+[4 <./motnq5.png (PNG copy)>]
+Underfull \hbox (badness 10000) in paragraph at lines 83--86
+
+ []
+
+[5] <motnq7.png, id=35, 1184.425pt x 421.575pt>
+File: motnq7.png Graphic file (type png)
+ <use motnq7.png>
+Package pdftex.def Info: motnq7.png used on input line 102.
+(pdftex.def)             Requested size: 367.16795pt x 130.68689pt.
+
+Overfull \hbox (22.16795pt too wide) in paragraph at lines 102--102
+[][] 
+ []
+
+<motnq8.png, id=36, 792.9625pt x 508.90125pt>
+File: motnq8.png Graphic file (type png)
+ <use motnq8.png>
+Package pdftex.def Info: motnq8.png used on input line 106.
+(pdftex.def)             Requested size: 372.69243pt x 239.18362pt.
+
+Overfull \hbox (27.69243pt too wide) in paragraph at lines 106--106
+[][] 
+ []
+
+[6 <./motnq7.png (PNG copy)>] <motnq91.png, id=41, 1445.4pt x 804.00375pt>
+File: motnq91.png Graphic file (type png)
+
+<use motnq91.png>
+Package pdftex.def Info: motnq91.png used on input line 110.
+(pdftex.def)             Requested size: 361.34912pt x 201.00044pt.
+
+Overfull \hbox (16.34912pt too wide) in paragraph at lines 110--110
+[][] 
+ []
+
+<motnq92.png, id=42, 1445.4pt x 804.00375pt>
+File: motnq92.png Graphic file (type png)
+ <use motnq92.png>
+Package pdftex.def Info: motnq92.png used on input line 110.
+(pdftex.def)             Requested size: 361.34912pt x 201.00044pt.
+
+Overfull \hbox (16.34912pt too wide) in paragraph at lines 110--110
+[][] 
+ []
+
+[7 <./motnq8.png (PNG copy)>]
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[8 <./motnq91.png (PNG copy)>] <motnq101.png, id=49, 562.1pt x 421.575pt>
+File: motnq101.png Graphic file (type png)
+
+<use motnq101.png>
+Package pdftex.def Info: motnq101.png used on input line 114.
+(pdftex.def)             Requested size: 281.04932pt x 210.78697pt.
+ <motnq102.png, id=50, 615.29875pt x 464.73625pt>
+File: motnq102.png Graphic file (type png)
+
+<use motnq102.png>
+Package pdftex.def Info: motnq102.png used on input line 114.
+(pdftex.def)             Requested size: 276.88187pt x 209.12938pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[9 <./motnq92.png (PNG copy)>] [10 <./motnq101.png (PNG copy)> <./motnq102.png 
+(PNG copy)>] <motnq11.png, id=58, 721.69624pt x 581.17125pt>
+File: motnq11.png Graphic file (type png)
+ <use motnq11.png>
+Package pdftex.def Info: motnq11.png used on input line 118.
+(pdftex.def)             Requested size: 360.84724pt x 290.58492pt.
+
+Overfull \hbox (15.84724pt too wide) in paragraph at lines 118--118
+[][] 
+ []
+
+<motnq12.png, id=59, 642.4pt x 511.9125pt>
+File: motnq12.png Graphic file (type png)
+ <use motnq12.png>
+Package pdftex.def Info: motnq12.png used on input line 122.
+(pdftex.def)             Requested size: 321.19922pt x 255.95563pt.
+ [11 <./motnq11.png (PNG copy)>] <motnq13.png, id=63, 804.00375pt x 559.08875pt
+>
+File: motnq13.png Graphic file (type png)
+
+<use motnq13.png>
+Package pdftex.def Info: motnq13.png used on input line 126.
+(pdftex.def)             Requested size: 361.79836pt x 251.5876pt.
+
+Overfull \hbox (16.79836pt too wide) in paragraph at lines 126--126
+[][] 
+ []
+
+[12 <./motnq12.png (PNG copy)>] <motnq14.png, id=68, 676.5275pt x 482.80376pt>
+File: motnq14.png Graphic file (type png)
+
+<use motnq14.png>
+Package pdftex.def Info: motnq14.png used on input line 130.
+(pdftex.def)             Requested size: 358.55786pt x 255.88477pt.
+
+Overfull \hbox (13.55786pt too wide) in paragraph at lines 130--130
+[][] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 130--135
+
+ []
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<motnq15.png, id=69, 562.1pt x 421.575pt>
+File: motnq15.png Graphic file (type png)
+ <use motnq15.png>
+Package pdftex.def Info: motnq15.png used on input line 135.
+(pdftex.def)             Requested size: 337.2626pt x 252.94695pt.
+ [13 <./motnq13.png (PNG copy)>]
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<motnq16.png, id=73, 671.50874pt x 518.93875pt>
+File: motnq16.png Graphic file (type png)
+ <use motnq16.png>
+Package pdftex.def Info: motnq16.png used on input line 139.
+(pdftex.def)             Requested size: 315.60916pt x 243.90125pt.
+ [14 <./motnq14.png (PNG copy)>]
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<motnq17.png, id=77, 562.1pt x 421.575pt>
+File: motnq17.png Graphic file (type png)
+ <use motnq17.png>
+Package pdftex.def Info: motnq17.png used on input line 143.
+(pdftex.def)             Requested size: 297.91158pt x 223.43367pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[15 <./motnq15.png (PNG copy)>]
+
+LaTeX Warning: Text page 16 contains only floats.
+
+[16 <./motnq16.png (PNG copy)> <./motnq17.png (PNG copy)>]
+<motnq18.png, id=84, 669.50125pt x 519.9425pt>
+File: motnq18.png Graphic file (type png)
+ <use motnq18.png>
+Package pdftex.def Info: motnq18.png used on input line 147.
+(pdftex.def)             Requested size: 267.79576pt x 207.97331pt.
+
+<motnq19.png, id=85, 562.1pt x 421.575pt>
+File: motnq19.png Graphic file (type png)
+ <use motnq19.png>
+Package pdftex.def Info: motnq19.png used on input line 151.
+(pdftex.def)             Requested size: 252.94266pt x 189.70699pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 151--155
+
+ []
+
+
+Overfull \hbox (4.53036pt too wide) in paragraph at lines 151--155
+\OT1/ptm/m/n/10 for the full and sim-pli-fied mod-els, re-spec-tively, are $\OT
+1/cmr/m/n/10 (\OML/cmm/m/it/10 V; n\OT1/cmr/m/n/10 ) = (\OMS/cmsy/m/n/10 ^^@\OT
+1/cmr/m/n/10 60\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 15345\OML/cmm/m/it/10 ; \OT1/c
+mr/m/n/10 0\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 3152)$
+ []
+
+[17 <./motnq18.png (PNG copy)>]
+Underfull \hbox (badness 10000) in paragraph at lines 155--159
+
+ []
+
+[18 <./motnq19.png (PNG copy)>] [19]
+<motncode.pdf, id=96, 614.295pt x 794.97pt>
+File: motncode.pdf Graphic file (type pdf)
+ <use motncode.pdf>
+Package pdftex.def Info: motncode.pdf used on input line 165.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: motncode.pdf Graphic file (type pdf)
+
+<use motncode.pdf>
+Package pdftex.def Info: motncode.pdf used on input line 165.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+ <motncode.pdf, id=99, page=1, 614.295pt x 794.97pt>
+File: motncode.pdf Graphic file (type pdf)
+
+<use motncode.pdf, page 1>
+Package pdftex.def Info: motncode.pdf, page1 used on input line 165.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: motncode.pdf Graphic file (type pdf)
+ <use motncode.pdf, page 1>
+Package pdftex.def Info: motncode.pdf, page1 used on input line 165.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: motncode.pdf Graphic file (type pdf)
+
+<use motncode.pdf, page 1>
+Package pdftex.def Info: motncode.pdf, page1 used on input line 165.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: motncode.pdf Graphic file (type pdf)
+ <use motncode.pdf, page 1>
+Package pdftex.def Info: motncode.pdf, page1 used on input line 165.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: motncode.pdf Graphic file (type pdf)
+
+<use motncode.pdf, page 1>
+Package pdftex.def Info: motncode.pdf, page1 used on input line 165.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+ [20 <./motncode.pdf>]
+<motncode.pdf, id=129, page=2, 614.295pt x 794.97pt>
+File: motncode.pdf Graphic file (type pdf)
+
+<use motncode.pdf, page 2>
+Package pdftex.def Info: motncode.pdf, page2 used on input line 165.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: motncode.pdf Graphic file (type pdf)
+ <use motncode.pdf, page 2>
+Package pdftex.def Info: motncode.pdf, page2 used on input line 165.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: motncode.pdf Graphic file (type pdf)
+
+<use motncode.pdf, page 2>
+Package pdftex.def Info: motncode.pdf, page2 used on input line 165.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+ [21 <./motncode.pdf>]
+<motncode.pdf, id=133, page=3, 614.295pt x 794.97pt>
+File: motncode.pdf Graphic file (type pdf)
+
+<use motncode.pdf, page 3>
+Package pdftex.def Info: motncode.pdf, page3 used on input line 165.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: motncode.pdf Graphic file (type pdf)
+ <use motncode.pdf, page 3>
+Package pdftex.def Info: motncode.pdf, page3 used on input line 165.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: motncode.pdf Graphic file (type pdf)
+
+<use motncode.pdf, page 3>
+Package pdftex.def Info: motncode.pdf, page3 used on input line 165.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+ [22 <./motncode.pdf>]
+<motncode.pdf, id=137, page=4, 614.295pt x 794.97pt>
+File: motncode.pdf Graphic file (type pdf)
+
+<use motncode.pdf, page 4>
+Package pdftex.def Info: motncode.pdf, page4 used on input line 165.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: motncode.pdf Graphic file (type pdf)
+ <use motncode.pdf, page 4>
+Package pdftex.def Info: motncode.pdf, page4 used on input line 165.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: motncode.pdf Graphic file (type pdf)
+
+<use motncode.pdf, page 4>
+Package pdftex.def Info: motncode.pdf, page4 used on input line 165.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+ [23 <./motncode.pdf>]
+<motncode.pdf, id=141, page=5, 614.295pt x 794.97pt>
+File: motncode.pdf Graphic file (type pdf)
+
+<use motncode.pdf, page 5>
+Package pdftex.def Info: motncode.pdf, page5 used on input line 165.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: motncode.pdf Graphic file (type pdf)
+ <use motncode.pdf, page 5>
+Package pdftex.def Info: motncode.pdf, page5 used on input line 165.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: motncode.pdf Graphic file (type pdf)
+
+<use motncode.pdf, page 5>
+Package pdftex.def Info: motncode.pdf, page5 used on input line 165.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+ [24 <./motncode.pdf>]
+<motncode.pdf, id=146, page=6, 614.295pt x 794.97pt>
+File: motncode.pdf Graphic file (type pdf)
+
+<use motncode.pdf, page 6>
+Package pdftex.def Info: motncode.pdf, page6 used on input line 165.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: motncode.pdf Graphic file (type pdf)
+ <use motncode.pdf, page 6>
+Package pdftex.def Info: motncode.pdf, page6 used on input line 165.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: motncode.pdf Graphic file (type pdf)
+
+<use motncode.pdf, page 6>
+Package pdftex.def Info: motncode.pdf, page6 used on input line 165.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+ [25 <./motncode.pdf>]
+<motncode.pdf, id=150, page=7, 614.295pt x 794.97pt>
+File: motncode.pdf Graphic file (type pdf)
+
+<use motncode.pdf, page 7>
+Package pdftex.def Info: motncode.pdf, page7 used on input line 165.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: motncode.pdf Graphic file (type pdf)
+ <use motncode.pdf, page 7>
+Package pdftex.def Info: motncode.pdf, page7 used on input line 165.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: motncode.pdf Graphic file (type pdf)
+
+<use motncode.pdf, page 7>
+Package pdftex.def Info: motncode.pdf, page7 used on input line 165.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+ [26 <./motncode.pdf>]
+<motncode.pdf, id=154, page=8, 614.295pt x 794.97pt>
+File: motncode.pdf Graphic file (type pdf)
+
+<use motncode.pdf, page 8>
+Package pdftex.def Info: motncode.pdf, page8 used on input line 165.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: motncode.pdf Graphic file (type pdf)
+ <use motncode.pdf, page 8>
+Package pdftex.def Info: motncode.pdf, page8 used on input line 165.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: motncode.pdf Graphic file (type pdf)
+
+<use motncode.pdf, page 8>
+Package pdftex.def Info: motncode.pdf, page8 used on input line 165.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+ [27 <./motncode.pdf>]
+<motncode.pdf, id=158, page=9, 614.295pt x 794.97pt>
+File: motncode.pdf Graphic file (type pdf)
+
+<use motncode.pdf, page 9>
+Package pdftex.def Info: motncode.pdf, page9 used on input line 165.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: motncode.pdf Graphic file (type pdf)
+ <use motncode.pdf, page 9>
+Package pdftex.def Info: motncode.pdf, page9 used on input line 165.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: motncode.pdf Graphic file (type pdf)
+
+<use motncode.pdf, page 9>
+Package pdftex.def Info: motncode.pdf, page9 used on input line 165.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+ [28 <./motncode.pdf>]
+<motncode.pdf, id=162, page=10, 614.295pt x 794.97pt>
+File: motncode.pdf Graphic file (type pdf)
+
+<use motncode.pdf, page 10>
+Package pdftex.def Info: motncode.pdf, page10 used on input line 165.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: motncode.pdf Graphic file (type pdf)
+ <use motncode.pdf, page 10>
+Package pdftex.def Info: motncode.pdf, page10 used on input line 165.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: motncode.pdf Graphic file (type pdf)
+
+<use motncode.pdf, page 10>
+Package pdftex.def Info: motncode.pdf, page10 used on input line 165.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+ [29 <./motncode.pdf>]
+<motncode.pdf, id=166, page=11, 614.295pt x 794.97pt>
+File: motncode.pdf Graphic file (type pdf)
+
+<use motncode.pdf, page 11>
+Package pdftex.def Info: motncode.pdf, page11 used on input line 165.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: motncode.pdf Graphic file (type pdf)
+ <use motncode.pdf, page 11>
+Package pdftex.def Info: motncode.pdf, page11 used on input line 165.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: motncode.pdf Graphic file (type pdf)
+
+<use motncode.pdf, page 11>
+Package pdftex.def Info: motncode.pdf, page11 used on input line 165.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+ [30 <./motncode.pdf>]
+<motncode.pdf, id=171, page=12, 614.295pt x 794.97pt>
+File: motncode.pdf Graphic file (type pdf)
+
+<use motncode.pdf, page 12>
+Package pdftex.def Info: motncode.pdf, page12 used on input line 165.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: motncode.pdf Graphic file (type pdf)
+ <use motncode.pdf, page 12>
+Package pdftex.def Info: motncode.pdf, page12 used on input line 165.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: motncode.pdf Graphic file (type pdf)
+
+<use motncode.pdf, page 12>
+Package pdftex.def Info: motncode.pdf, page12 used on input line 165.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+ [31 <./motncode.pdf>]
+<motncode.pdf, id=175, page=13, 614.295pt x 794.97pt>
+File: motncode.pdf Graphic file (type pdf)
+
+<use motncode.pdf, page 13>
+Package pdftex.def Info: motncode.pdf, page13 used on input line 165.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: motncode.pdf Graphic file (type pdf)
+ <use motncode.pdf, page 13>
+Package pdftex.def Info: motncode.pdf, page13 used on input line 165.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: motncode.pdf Graphic file (type pdf)
+
+<use motncode.pdf, page 13>
+Package pdftex.def Info: motncode.pdf, page13 used on input line 165.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+ [32 <./motncode.pdf>]
+<motncode.pdf, id=179, page=14, 614.295pt x 794.97pt>
+File: motncode.pdf Graphic file (type pdf)
+
+<use motncode.pdf, page 14>
+Package pdftex.def Info: motncode.pdf, page14 used on input line 165.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: motncode.pdf Graphic file (type pdf)
+ <use motncode.pdf, page 14>
+Package pdftex.def Info: motncode.pdf, page14 used on input line 165.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: motncode.pdf Graphic file (type pdf)
+
+<use motncode.pdf, page 14>
+Package pdftex.def Info: motncode.pdf, page14 used on input line 165.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+ [33 <./motncode.pdf>] (./motn_project1_gkiar.aux) ) 
+Here is how much of TeX's memory you used:
+ 5392 strings out of 493117
+ 79329 string characters out of 6135433
+ 154746 words of memory out of 5000000
+ 8720 multiletter control sequences out of 15000+600000
+ 17574 words of font info for 56 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 44i,18n,46p,2358b,416s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/local/texlive/2014/te
+xmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/texlive/2014/texmf-dist/fonts/
+type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2014/texmf-dist/fonts/t
+ype1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2014/texmf-dist/fonts/ty
+pe1/public/amsfonts/cm/cmmi5.pfb></usr/local/texlive/2014/texmf-dist/fonts/type
+1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/
+public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/pu
+blic/amsfonts/cm/cmr5.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/publi
+c/amsfonts/cm/cmr7.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/a
+msfonts/cm/cmsy10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/am
+sfonts/cm/cmsy7.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsf
+onts/symbols/msbm10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/urw/cou
+rier/ucrr8a.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/urw/times/utmr8
+a.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
+Output written on motn_project1_gkiar.pdf (34 pages, 745846 bytes).
+PDF statistics:
+ 227 PDF objects out of 1000 (max. 8388607)
+ 136 compressed objects within 2 object streams
+ 0 named destinations out of 1000 (max. 500000)
+ 171 words of extra memory for PDF output out of 10000 (max. 10000000)
+

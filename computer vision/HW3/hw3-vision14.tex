@@ -1,0 +1,125 @@
+\documentclass[10pt]{article}
+
+\usepackage{amsmath,amscd}
+\usepackage{amssymb,array}
+\usepackage{amsfonts,latexsym}
+\usepackage{graphicx,subfig,wrapfig}
+\usepackage{times}
+\usepackage{listings}
+\usepackage{psfrag,epsfig}
+\usepackage{verbatim}
+\usepackage{tabularx}
+\usepackage[pagebackref=true,breaklinks=true,letterpaper=true,colorlinks,bookmarks=false]{hyperref}
+
+\DeclareMathOperator*{\rank}{rank}
+\DeclareMathOperator*{\trace}{trace}
+\DeclareMathOperator*{\range}{range}
+\DeclareMathOperator*{\spn}{span}
+\DeclareMathOperator*{\acos}{acos}
+\DeclareMathOperator*{\argmax}{argmax}
+
+\newcommand{\matlab}[1]{\texttt{#1}}
+\newcommand{\setname}[1]{\textsl{#1}}
+\newcommand{\Ce}{\mathbb{C}}
+
+\newenvironment{mfunction}[1]{
+\noindent
+\tabularx{\linewidth}{>{\ttfamily}rX}
+\hline
+\multicolumn{2}{l}{\textbf{Function \matlab{#1}}}\\
+\hline
+}{\\\endtabularx}
+
+\newcommand{\parameters}{\multicolumn{2}{l}{\textbf{Parameters}}\\}
+
+\newcommand{\fdescription}[1]{\multicolumn{2}{p{0.96\linewidth}}{
+
+\textbf{Description}
+
+ #1}\\\hline}
+
+\newcommand{\retvalues}{\multicolumn{2}{l}{\textbf{Returned values}}\\}
+\def\0{\boldsymbol{0}}
+\def\b{\boldsymbol{b}}
+\def\bmu{\boldsymbol{\mu}}
+\def\e{\boldsymbol{e}}
+\def\u{\boldsymbol{u}}
+\def\x{\boldsymbol{x}}
+\def\v{\boldsymbol{v}}
+\def\w{\boldsymbol{w}}
+\def\N{\boldsymbol{N}}
+\def\X{\boldsymbol{X}}
+\def\Y{\boldsymbol{Y}}
+\def\A{\boldsymbol{A}}
+\def\B{\boldsymbol{B}}
+\def\y{\boldsymbol{y}}
+\def\cX{\mathcal{X}}
+\def\transpose{\top} 
+
+%\long\def\answer#1{{\bf ANSWER:} #1}
+\long\def\answer#1{}
+\newcommand{\myhat}{\widehat}
+\long\def\comment#1{}
+\newcommand{\eg}{{e.g.,~}}
+\newcommand{\ea}{{et al.~}}
+\newcommand{\ie}{{i.e.,~}}
+
+\newcommand{\db}{{\boldsymbol{d}}}
+\renewcommand{\Re}{{\mathbb{R}}}
+\newcommand{\Pe}{{\mathbb{P}}}
+
+\hyphenation{MATLAB}
+\usepackage[margin=1in]{geometry}
+
+
+\begin{document}
+
+\title{
+\vspace{-19mm}
+Computer Vision (600.461/600.661)\\
+Homework 3: Line and Point Detection}
+\author{Instructor: Ren\'e Vidal}
+\date{Due 10/02/2014, 11.59PM Eastern}
+
+\maketitle
+
+Student: Gregory Kiar
+\begin{enumerate}
+
+\item \textbf{Line Detection} 
+%
+\begin{enumerate}
+\item MATLAB functions hw3q1a.m, and ransac.m were created.
+\item In order to make RANSAC fit $m$ models to the data, it would be nested within a loop over $m$ models. After each line is fit to a set of data, those inliers are then removed from the data set and the process is repeated on the new, smaller, data set.
+
+In order to guarantee that you recover the model, you would need to consider the number of iterations required to guarantee each model to be found on its own and combine them. Unfortunately, it's not that simple. As you remove lines, the percent of inliers changes, so the equation representing $k$ is not linear. For the first model:
+\begin{equation}
+\omega' = \frac{\omega N}{n}
+\end{equation}
+Where $\omega$ is the percentage of inliers for a given model, $N$ is the number of points in the model, and $n$ is the number of points needed to fit the model. This value for $\omega'$ then plugged into the iteration equation:
+\begin{equation}
+k \geq \frac{log(1-p)}{log(1-\omega'^n)}
+\end{equation}
+This number, k, is the number of iterations to find the first model. Assuming the first model is found perfectly, and subsequently removed from the dataset, $\omega$ is adjusted to be:
+\begin{equation}
+\omega' = N- \frac{\omega N}{n}
+\end{equation}
+This process repeats, each time subtracting the inliers used for the previous model (the previous $\omega'$). Since this relationship is complicated it is difficult to describe the relationship between the total number of iterations and the number of models, an approximation is stated such that the number of iterations increases exponentially with the number of models. In terms of the number of points needed for each model, we can see the relationship that the fewer the number of points per model, the fewer the iterations. This is because the denominator in the expression for $k$ shrinks with $n$ increasing.
+\item MATLAB functions hw3q1c.m, and ransac.m (modified from 1a for nlines) were created.
+\item MATLAB functions hw3q1d.m, and ransac.m (modified from 1c to hide plots) were created.
+\end{enumerate}
+
+\item \textbf{Feature point detection and matching.}
+\begin{enumerate}
+\item MATLAB functions corners.m and hw3q2a.m were created.
+\item MATLAB function features.m was created.
+\item MATLAB functions matching.m and hw3q2c.m were created.
+
+
+\end{enumerate}
+\end{enumerate}
+\vspace{10mm}
+Attached in this packages is README which contains specific instructions on executing each of the scripts included.
+
+
+\end{document}

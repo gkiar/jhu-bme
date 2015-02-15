@@ -1,0 +1,161 @@
+\documentclass[10pt]{article}
+
+\usepackage{amsmath,amscd}
+\usepackage{amssymb,array}
+\usepackage{amsfonts,latexsym}
+\usepackage{graphicx,subfig,wrapfig}
+\usepackage{times}
+\usepackage{psfrag,epsfig}
+\usepackage{verbatim}
+\usepackage{tabularx}
+\usepackage[pagebackref=true,breaklinks=true,letterpaper=true,colorlinks,bookmarks=false]{hyperref}
+
+\DeclareMathOperator*{\rank}{rank}
+\DeclareMathOperator*{\trace}{trace}
+\DeclareMathOperator*{\range}{range}
+\DeclareMathOperator*{\spn}{span}
+\DeclareMathOperator*{\acos}{acos}
+\DeclareMathOperator*{\argmax}{argmax}
+
+\newcommand{\matlab}[1]{\texttt{#1}}
+\newcommand{\setname}[1]{\textsl{#1}}
+\newcommand{\Ce}{\mathbb{C}}
+
+\newenvironment{mfunction}[1]{
+\noindent
+\tabularx{\linewidth}{>{\ttfamily}rX}
+\hline
+\multicolumn{2}{l}{\textbf{Function \matlab{#1}}}\\
+\hline
+}{\\\endtabularx}
+
+\newcommand{\parameters}{\multicolumn{2}{l}{\textbf{Parameters}}\\}
+
+\newcommand{\fdescription}[1]{\multicolumn{2}{p{0.96\linewidth}}{
+
+\textbf{Description}
+
+ #1}\\\hline}
+
+\newcommand{\retvalues}{\multicolumn{2}{l}{\textbf{Returned values}}\\}
+\def\0{\boldsymbol{0}}
+\def\b{\boldsymbol{b}}
+\def\bmu{\boldsymbol{\mu}}
+\def\e{\boldsymbol{e}}
+\def\u{\boldsymbol{u}}
+\def\x{\boldsymbol{x}}
+\def\v{\boldsymbol{v}}
+\def\w{\boldsymbol{w}}
+\def\N{\boldsymbol{N}}
+\def\X{\boldsymbol{X}}
+\def\Y{\boldsymbol{Y}}
+\def\A{\boldsymbol{A}}
+\def\B{\boldsymbol{B}}
+\def\y{\boldsymbol{y}}
+\def\cX{\mathcal{X}}
+\def\transpose{\top} 
+
+%\long\def\answer#1{{\bf ANSWER:} #1}
+\long\def\answer#1{}
+\newcommand{\myhat}{\widehat}
+\long\def\comment#1{}
+\newcommand{\eg}{{e.g.,~}}
+\newcommand{\ea}{{et al.~}}
+\newcommand{\ie}{{i.e.,~}}
+
+\newcommand{\db}{{\boldsymbol{d}}}
+\renewcommand{\Re}{{\mathbb{R}}}
+\newcommand{\Pe}{{\mathbb{P}}}
+
+\hyphenation{MATLAB}
+\usepackage[margin=1in]{geometry}
+
+
+\begin{document}
+
+\title{
+\vspace{-19mm}
+Computer Vision (600.461/600.661)\\
+Homework 1: Mathematical Background}
+\author{Instructor: Ren\'e Vidal}
+\date{Due 09/11/2014, 11.59PM Eastern}
+
+\maketitle
+
+\begin{enumerate}
+
+\item \textbf{Properties of Symmetric Matrices.} 
+Let $S\in\Re^{n\times n}$ be a real symmetric matrix. Show that: 
+%
+\begin{enumerate}
+\item All the eigenvalues of $S$ are real, \ie $\sigma(S) \subset \Re$.
+\item Let $(\lambda,v)$ be an eigenvalue-eigenvector pair. If $\lambda_i \ne \lambda_j$, then $v_i \perp v_j$; \ie  eigenvectors corresponding to distinct eigenvalues are orthogonal.
+\item There always exist $n$ orthonormal eigenvectors of $S$, which form a basis of $\Re^n$.
+\item $S$ is positive definite (positive semidefinite) if and only if all of its eigenvalues are positive (non-negative), \ie  $S \succ 0$ ($S \succeq 0$), iff $ \forall i =
+1,2,\ldots,n$, $\lambda_i > 0$ ($\lambda_i \ge 0$).
+\item If $\lambda_1 \ge \lambda_2 \ge \cdots \ge \lambda_n $ are the sorted eigenvalues of $S$, then $\max\limits_{\|\x\|_2 = 1} \x^\transpose S \x = \lambda_1$ and
+$\min\limits_{\|\x\|_2 = 1} \x^\transpose S \x  = \lambda_n$.
+\end{enumerate}
+
+\item \textbf{Properties of the SVD.}
+Let $ A = U \Sigma V^\transpose$ be the SVD of a matrix $A \in \Re^{m\times n}$ of rank $r$. Show that:
+%
+\begin{enumerate}
+\item $A \v_j = \sigma_j \u_j$ for $j=1,\dots,r$ and $A^\transpose \u_j = \sigma \v_j$ for $j=1,\dots,r$.
+\item The range or image of $A$ is spanned by the left singular vectors of $A$ associated with its nonzero singular values, \ie $\range(A) = \spn\{\u_i\}_{i=1}^r$.
+\item The kernel or null space of $A$ is spanned by the right singular vectors of $A$ associated with its zero singular values, \ie $\ker(A) = \spn\{\v_i\}_{i=r+1}^m$.
+\item The squared Frobenius norm of $A$ is equal to the sum of the squared singular values of $A$, \ie $\|A\|_F^2 = \sum_{ij} a_{ij}^2 = \sum_{k=1}^r \sigma_k^2$.
+\item The right singular vector of $A$ associated to its smallest singular value, $\v_m$,  is a solution to the optimization problem $\min\limits_{\x} \|A\x\|_2^2$ such that $\|\x\|_2 = 1$.
+\end{enumerate}
+
+\item \textbf{Least Squares.}
+Recall that the pseudo inverse of a matrix $A\in\Re^{m\times n}$ is the unique matrix $A^\dag \in \Re^{n\times m}$ such that: (i) $AA^\dag A = A$, (ii) $A^\dag A A^\dag = A^\dag$, (iii) $(AA^\dag )^\transpose = AA^\dag$, and (iv) $(A^\dag A)^\transpose = A^\dag A$. Let $ A = U \Sigma V^\transpose$ be the SVD of $A$, let $r = \rank(A)$ and let $\b\in\Re^m$. 
+Show that:
+
+\begin{enumerate}
+\item The pseudo-inverse of $A$ is given by $A^\dag = V_r \Sigma_r^{-1} U_r^\transpose$, where $A = U_r \Sigma_r V_r ^ \transpose$ is the compact SVD of $A$. 
+
+\item $\x^* = A^\dag \b $ is a solution to the optimization problem $\min\limits_{\x} \| A \x - \b \|_2^2$. When is $\x^*$ the unique solution?
+
+\item If $\b \in \range (A)$, $\x^* = A^\dag \b $ is the solution to the optimization problem $\min\limits_{\x} \| \x \|_2^2$ such that $A \x = \b$. 
+\end{enumerate}
+
+
+
+\end{enumerate}
+
+\noindent\textbf{Submission instructions.} Send email to \href{mailto:vision14jhu@gmail.com?subject=600.692:HW1}{vision14jhu@gmail.com} with subject  \href{mailto:vision14jhu@gmail.com?subject=600.461/600.661:HW1}{600.461/600.661:HW1} and attachment \matlab{firstname-lastname-hw1-vision14.zip} or \matlab{firstname-lastname-hw1-vision14.tar.gz}. The attachment should have the following content:
+%
+\begin{enumerate}
+\item A file called \matlab{hw1.pdf} containing your answers to each one of the analytical questions. If at all possible,
+you should generate this file using the latex template
+\href{http://www.vision.jhu.edu/teaching/vision/vision14/Homeworks/hw1-learning14.tex}{hw1-vision14.tex}.
+If not possible, you may use another editor, or scan your handwritten solutions.
+But note that you must submit a single PDF file with all your answers.
+
+%\item For coding questions, submit a file called \matlab{README}, 
+%which contains instructions on how to run your code. Use
+%separate directories for each coding problem. Each directory should
+%contain all the functions and scripts you are asked to write in separate
+%files. For example, for HW1 the structure of what you should submit could look like
+%\begin{enumerate}
+%\item \matlab{README}
+%\item \matlab{hw1.pdf}
+%\item
+%\matlab{hw1q3}: \matlab{hw1q3c.m}, \matlab{hw1q3e.m}
+%\item \matlab{hw1q4}: \matlab{hw1q4b.m}, \matlab{hw1q4c.m}
+%\end{enumerate}
+%
+%The TA will run your scripts to generate the results. Thus, your
+%script should include all needed plotting commands so that figures
+%pop up automatically. Please make sure that the figure numbers match
+%those you describe in \matlab{hw1.pdf}. You do not
+%need to submit input or output images. The output images should be
+%automatically generated by your scripts so that the TA can see the results
+%by just running the scripts. In writing your code, you should assume that
+%the TA will place the input images in the directory that is relevant to the
+%question solved by your script. Also, make sure to comment your code properly.
+
+\end{enumerate}
+
+\end{document}

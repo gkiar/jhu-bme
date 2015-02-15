@@ -1,0 +1,41 @@
+\documentclass[10pt]{article}
+
+\usepackage{amsmath,amscd}
+\usepackage{amssymb,array}
+\usepackage{amsfonts,latexsym}
+\usepackage[mathscr]{euscript}
+\usepackage{graphicx,subfig,wrapfig}
+\usepackage{times}
+\usepackage{psfrag,epsfig}
+\usepackage{verbatim}
+\usepackage{tabularx}
+
+\newcommand{\matlab}[1]{\texttt{#1}}
+\newcommand{\setname}[1]{\textsl{#1}}
+\newcommand{\Ce}{\mathbb{C}}
+\newcommand{\Ree}{\mathbb{R}}
+\newcommand{\p}{\begin{pmatrix}}
+\newcommand{\pp}{\end{pmatrix}}
+\newcommand{\bm}{\begin{bmatrix}}
+\newcommand{\bb}{\end{bmatrix}}
+\newcommand{\eul}[1]{e^{#1}}
+
+\begin{document}
+
+\title{ \vspace{-50mm} Models of the Neuron (580.639) Midterm Eqn Sheet}
+\author{Greg Kiar}
+
+%\maketitle
+\vspace{-90mm}
+\begin{enumerate}
+
+\input{midterm1eqns}
+
+\begin{align*}
+\\ \\ \\ 
+V = \frac{RT}{\mathscr{F}} \ln \p \frac{\sum g_i [C_i]_o}{\sum g_i [C_i]_i} \pp
+\end{align*}
+
+
+\end{enumerate}
+\end{document}

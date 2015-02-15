@@ -1,0 +1,86 @@
+\begin{thebibliography}{10}
+
+\bibitem{Altun2003}
+Z.F. Altun, C.~Crocker, D.H. Hall, L.A. Herndon, and R.~Lints.
+\newblock {Worm Atlas}, 2002.
+
+\bibitem{Chalfie1985}
+M~Chalfie, J~E Sulston, J~G White, E~Southgate, J~N Thomson, and S~Brenner.
+\newblock {The neural circuit for touch sensitivity in Caenorhabditis elegans.}
+\newblock {\em The Journal of neuroscience : the official journal of the
+  Society for Neuroscience}, 5(4):956--64, April 1985.
+
+\bibitem{Chen2006}
+Beth~L Chen, David~H Hall, and Dmitri~B Chklovskii.
+\newblock {Wiring optimization can relate neuronal structure and function.}
+\newblock {\em Proceedings of the National Academy of Sciences of the United
+  States of America}, 103(12):4723--8, March 2006.
+
+\bibitem{Dunn2003}
+N.A. Dunn, J.S. Conery, and S.R. Lockery.
+\newblock {A neural network model for chemotaxis in Caenorhabditis elegans}.
+\newblock {\em Proceedings of the International Joint Conference on Neural
+  Networks, 2003.}, 4, 2003.
+
+\bibitem{Goodman1998}
+Miriam~B Goodman, David~H Hall, Leon Avery, and Shawn~R Lockery.
+\newblock {Active Currents Regulate Sensitivity and Dynamic Range in C. elegans
+  Neurons}.
+\newblock {\em Neuron}, 20(4):763--772, April 1998.
+
+\bibitem{Iwasaki2006}
+Y.~Iwasaki.
+\newblock {Effective modeling of a partial neural network of C. elegans: Theory
+  and application}.
+\newblock {\em International Congress Series}, 1291:125--128, June 2006.
+
+\bibitem{Iwasaki2004}
+Yuishi Iwasaki and Sohei Gomi.
+\newblock {Stochastic formulation for a partial neural circuit of C. elegans.}
+\newblock {\em Bulletin of mathematical biology}, 66(4):727--43, July 2004.
+
+\bibitem{Kunert2014}
+James Kunert, Eli Shlizerman, and J.~Nathan Kutz.
+\newblock {Low-dimensional functionality of complex network dynamics:
+  Neurosensory integration in the Caenorhabditis elegans}.
+\newblock {\em Physical Review E}, 89(5):052805, May 2014.
+
+\bibitem{Oshio2003}
+K.~Oshio, Y.~Iwasaki, S.~Morita, Y.~Osana, S.~Gomi, E.~Akiyama, K.~Omata,
+  K.~Kawamura, and K.~Oka.
+\newblock {Database of Synaptic Connectivity of C. elegans for Computation},
+  2003.
+
+\bibitem{Rakowski2013}
+Franciszek Rakowski, Jagan Srinivasan, Paul~W Sternberg, and Jan Karbowski.
+\newblock {Synaptic polarity of the interneuron circuit controlling C. elegans
+  locomotion.}
+\newblock {\em Frontiers in computational neuroscience}, 7:128, January 2013.
+
+\bibitem{Sulston1977}
+J~E Sulston and H~R Horvitz.
+\newblock {Post-embryonic cell lineages of the nematode, Caenorhabditis
+  elegans.}
+\newblock {\em Developmental biology}, 56(1):110--56, March 1977.
+
+\bibitem{Varshney2011}
+Lav~R Varshney, Beth~L Chen, Eric Paniagua, David~H Hall, and Dmitri~B
+  Chklovskii.
+\newblock {Structural properties of the Caenorhabditis elegans neuronal
+  network.}
+\newblock {\em PLoS computational biology}, 7(2):e1001066, January 2011.
+
+\bibitem{White1986}
+J.~G. White, E.~Southgate, J.~N. Thomson, and S.~Brenner.
+\newblock {The Structure of the Nervous System of the Nematode Caenorhabditis
+  elegans}.
+\newblock {\em Philosophical Transactions of the Royal Society B: Biological
+  Sciences}, 314(1165):1--340, November 1986.
+
+\bibitem{Wicks1996a}
+Stephen~R. Wicks, Chris~J. Roehrig, and Catharine~H. Rankin.
+\newblock {A Dynamic Network Simulation of the Nematode Tap Withdrawal Circuit:
+  Predictions Concerning Synaptic Function Using Behavioral Criteria}.
+\newblock {\em J. Neurosci.}, 16(12):4017--4031, June 1996.
+
+\end{thebibliography}

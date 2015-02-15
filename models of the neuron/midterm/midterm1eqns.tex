@@ -1,0 +1,40 @@
+\item \textbf{Equilibrium}
+\begin{align*}
+\text{Free energy (equal at equil } & & \mu_i = \mu_i^o + RT\ln C_i + z_i\mathscr{F}V \\
+%
+\text{Equilibrium is defined as } & & \Delta G = 0 \text{ or } \mu_s^1 = \mu_s^2 \\
+%
+\text{Nernst Equation } & & E = \frac{RT}{z\mathscr{F}}\ln \frac{C_1}{C_2}\\
+%
+\end{align*}
+\item \textbf{Ion Flux}
+\begin{align*}
+\text{Nernst-Planck Equation } & & J = -u C \bm RT \frac{d \ln C}{dx} + z\mathscr{F} \frac{dV}{dx} \bb \\
+%
+& & I = -z\mathscr{F} u C  \bm RT \frac{d \ln C}{dx} + z\mathscr{F} \frac{dV}{dx} \bb \\
+\text{GHK Equation } & & I_i = \frac{\p z \mathscr{F}\pp^2u_i}{d} \Delta V \frac{C_i(d)\eul{\frac{z_o \mathscr{F} \Delta V}{RT}} - C_i(0)}{\eul{\frac{z_o \mathscr{F} \Delta V}{RT}} -1} \\
+& & \Delta V_{rest} = \frac{RT}{\mathscr{F}} \ln \p \frac{u_KK_o + u_{Na}Na_o + u_{Cl}Cl_i}{u_KK_i + u_{Na}Na_i + u_{Cl}Cl_o} \pp \\
+%
+\text{Rate Constants } & & k_i =  (const) \eul{\frac{-(G+ \lambda z \mathscr{F} \Delta V)}{RT}} \\
+%
+\text{Flux Across Barrier } & & J_{AB} = k_iA , J_{BA} = k_{-i}B,  \\
+& & J = J_{AB} - J_{BA} \\
+& & J = (const) \eul{\frac{-(G+ \lambda z \mathscr{F} \Delta V)}{RT}} \p A - B\eul{\frac{z\mathscr{F} \Delta V}{RT} } \pp\\
+& \frac{RT}{\mathscr{F}} = 26 mV  &\\
+\end{align*}
+\item \textbf{Phase Planes}
+\begin{align*}
+\text{Corelated Variables } & & m_{\infty} = 0.5 \p 1+ \tanh \p \frac{V-V_1}{V_2} \pp \pp \\
+& & \omega_{\infty} = 0.5 \p 1+ \tanh \p \frac{V-V_3}{V_4} \pp \pp \\
+& & \tau_{\infty} = \frac{1}{\cosh \p \frac{V-V_3}{2V_4} \pp } \\
+\text{State Vector } & & \dot{\vec{X}} = \bm \dot{V} \\ \dot{\omega} \bb = \bm F_1(\vec{x}) \\ F_2(\vec{x}) \bb = \vec{F}(\vec{X}) \\
+\text{Nullclines for MLE case } & & \dot{V} = 0 \to \omega = \frac{I_{ext} - \vec{G_{Ca}}m_{\infty}(V-E_{Ca}) - \vec{G_L}(V-E_L)}{\vec{G_K}(V-E_K)} \\
+& & \dot{\omega} = 0 \to \omega = \omega_{\infty}(V) \\
+\text{Jacobian} & & \vec{x}(t) = \sum_{i=1}^{N} a_i\vec{e_i} \eul{\lambda_i t}
+\end{align*}
+\begin{align*}
+\text{Eigen values} &  \lambda_i : & \Ree^{-} \to \text{stable eq} \\ && \Ree^{+} \to \text{unstable eq} \\ && \Ce, \lambda_1 = \lambda_2^* \to \text{possible Hopf bifurcation nearby} \\ & & \Ree, sign(\lambda_1) \neq sign(\lambda_2) \to \text{saddle eq} \\
+\end{align*}
+\item \textbf{Limit Cycles}
+\begin{align*}
+\end{align*}

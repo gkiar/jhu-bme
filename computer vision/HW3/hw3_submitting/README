@@ -1,0 +1,18 @@
+#README
+
+Greg Kiar
+10/02/2014
+Computer Vision - HW 3
+
+Execution instructions for programs developed:
+
+Q1
+a) Execute file titled "hw3q1a.m". To iterate through each plotting of the RANSAC method, the pause function was used. This means that a key must be pressed to step through the iterations of the algorithm. At the end of these, the final result is displayed.
+b) No code
+c) Exectue file titled "hw2q1c.m". To iterate through each plotting of the RANSAC-M method, the pause function was again used. At the end of the iterations, the final result is displayed.
+d) Exectue file titled "hw3q1d.m". To iterate through each image with RANSAC-M applied, the pause function was used. This version was modified from the original RANSAC in that no intermediate plots are displayed (you're welcome).
+
+Q2
+a) Execute file titled "hw3q2a.m". To iterate through all of the parameters of w and kappa, the pause function is again used. As mentioned in class, the supression vs. non-supression was more of a teaching tool to view our results than a real output, so I did not plot unsupressed values.
+b) function not run on its own
+c) Execute file titled "hw3q2c.m". The pause function was again used, so I think you get the drill at this point... Also, note, it takes a fair bit of time to process since sooo many corners were detected in both of the images (per pair).

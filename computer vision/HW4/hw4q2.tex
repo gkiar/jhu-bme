@@ -1,0 +1,92 @@
+\begin{align*}
+E(R,t) &= \sum_{j=1}\lVert y_j - Rx_j - t \rVert_2^2
+\end{align*}
+We know that,from class,
+\begin{align*}
+\underset{R,t}{\operatorname{min}} E(R,t)&:\\
+t^* &= \bar{Y} - R\bar{X} \\
+R^* &= \underset{R}{\operatorname{min}}\lVert Y-RX \rVert_F^2\\
+&=  \underset{R}{\operatorname{min}}\lVert Y \rVert_F^2 - 2\langle Y, RX \rangle + \lVert RX \rVert_F^2\\
+&= \underset{R}{\operatorname{min}} -\langle Y,RX \rangle \\
+&= \underset{R}{\operatorname{max}} \langle Y,RX \rangle \\
+R^* &= \underset{R}{\operatorname{max}} \text{ trace}(Y^T RX) 
+\end{align*}
+We also know from class that $R$ is of the form:
+\begin{align*}
+R &=
+\begin{pmatrix}
+\cos\theta & -\sin\theta \\
+\sin\theta & \cos\theta\\
+\end{pmatrix}\\
+R &= I\cos\theta + 
+\begin{pmatrix}
+0 & -1 \\ 1 & 0
+\end{pmatrix}
+\sin\theta \\
+\therefore R^* &=
+\begin{pmatrix}
+\cos\theta^* & -\sin\theta^* \\
+\sin\theta^* & \cos\theta^*\\
+\end{pmatrix}
+\end{align*}
+Where, 
+\begin{align*}
+\theta^* &= \underset{\theta}{\operatorname{max}} \text{ trace}(Y^YRX)^T\\
+&= \underset{\theta}{\operatorname{max}} \text{ trace}(X^T R^TY)\\
+&= \underset{\theta}{\operatorname{max}} \text{ trace}(X^T(I\cos\theta + 
+\begin{pmatrix}
+0 & 1 \\ -1 & 0
+\end{pmatrix}
+\sin\theta)Y)\\
+&= \underset{\theta}{\operatorname{max}} \text{ trace}(X^T Y\cos\theta) + \text{ trace}(X^T 
+\begin{pmatrix}
+0 & 1 \\ -1 & 0
+\end{pmatrix}
+Y\sin\theta)\\
+0 &= \frac{\partial}{\partial\theta}
+\begin{bmatrix}
+\text{ trace}(X^T Y\cos\theta) + \text{ trace}(X^T 
+\begin{pmatrix}
+0 & 1 \\ -1 & 0
+\end{pmatrix}
+Y\sin\theta)
+\end{bmatrix}\\
+\text{ trace}(X^T Y)\sin\theta &= \text{ trace}(X^T 
+\begin{pmatrix}
+0 & 1 \\ -1 & 0
+\end{pmatrix}
+Y)\cos\theta \\
+\end{align*}
+We can now see that
+\begin{align*}
+\theta^* &= \arctan
+\begin{pmatrix}
+\frac{\text{ trace}(X^T
+\begin{pmatrix}
+0 & 1 \\ -1 & 0
+\end{pmatrix}
+Y)}{\text{ trace}(X^TY)}
+\end{pmatrix} \\
+\sin(\theta^*) &= \frac{\text{ trace}(X^T
+\begin{pmatrix}
+0 & 1 \\ -1 & 0
+\end{pmatrix}
+Y)}{\sqrt{\text{ trace}(X^TY)^2 + \text{ trace}(X^T
+\begin{pmatrix}
+0 & 1 \\ -1 & 0
+\end{pmatrix}
+Y)^2}} \\
+\cos(\theta^*) &= \frac{\text{ trace}(X^TY)}{\sqrt{\text{ trace}(X^TY)^2 + \text{ trace}(X^T
+\begin{pmatrix}
+0 & 1 \\ -1 & 0
+\end{pmatrix}
+Y)^2}} \\
+\end{align*}
+$\therefore$ we can sub in $\sin(\theta^*)$ and $\cos(\theta^*)$ into $R$ and find that\\
+\begin{align*}
+R &= \frac{
+\begin{pmatrix}
+\text{ trace}(X^T Y) & -\text{ trace}(X^T \begin{pmatrix} 0 & 1 \\ -1 & 0 \end{pmatrix} Y) \\
+\text{ trace}(X^T \begin{pmatrix} 0 & 1 \\ -1 & 0 \end{pmatrix} Y)  & \text{ trace}(X^T Y) \\
+\end{pmatrix}}{\sqrt{\text{ trace}(X^TY)^2 + \text{ trace}(X^T \begin{pmatrix} 0 & 1 \\ -1 & 0 \end{pmatrix} Y)^2}}
+\end{align*}

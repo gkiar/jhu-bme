@@ -1,0 +1,31 @@
+\begin{align*}
+E(Q,b,c) &= \sum_{u=1}w(x+u) \begin{bmatrix} \frac{1}{2}(x+u)^TQ(x+u) + b^T(x+u) + c - r(x+u) \end{bmatrix}^2
+\end{align*}
+From here, let $x_i = x+u$.
+\begin{align*}
+\underset{Q,b,c}{\operatorname{min}} E(Q,b,c) &=
+\underset{Q,b,c}{\operatorname{min}} \sum_{i=1}w_i \begin{bmatrix} \frac{1}{2}x_i^TQx_i + b^Tx_i + c - r_i \end{bmatrix}^2 \\
+\frac{\partial}{\partial c} E &= \frac{\partial}{\partial c} \sum_{i=1} w_i \begin{bmatrix} \frac{1}{2} x_i^TQX_i + b^Tx_i + c - r_i \end{bmatrix}^2 \\
+0 &= 2  \sum_{i=1} w_i \begin{bmatrix} \frac{1}{2} x_i^TQX_i + b^Tx_i - r_i \end{bmatrix} + 2 \sum_{i=1} w_ic \\
+c \sum_{i=1}w_i &= -\sum_{i=1} w_i \begin{bmatrix} \frac{1}{2} x_i^TQX_i + b^Tx_i - r_i \end{bmatrix} \\
+c^* & = -\frac{\sum_{i=1} w_i \begin{bmatrix} \frac{1}{2} x_i^TQX_i + b^Tx_i - r_i \end{bmatrix}}{\sum_{i=1}w_i} \\
+c^* & = -w \begin{pmatrix} \frac{1}{2} \bar{x}^TQ\bar{x} - b^T\bar{x} + \bar{r} \end{pmatrix}
+\end{align*}
+Now, subbing $c^*$ into the error equation we get,
+\begin{align*}
+\underset{Q,b,c^*}{\operatorname{min}} E(Q,b,c^*) &=
+\underset{Q,b,c^*}{\operatorname{min}} \sum_{i=1}w_i \begin{bmatrix} \frac{1}{2}x_i^TQx_i + b^Tx_i + c^* - r_i \end{bmatrix}^2 \\
+ &= \underset{Q,b,c^*}{\operatorname{min}} \sum_{i=1}w_i \begin{bmatrix} \frac{1}{2}x_i^TQx_i + b^Tx_i - \frac{1}{2} \bar{x}^TQ\bar{x} - b^T\bar{x} + \bar{r} - r_i \end{bmatrix}^2 \\
+&= \underset{Q,b,c^*}{\operatorname{min}} \sum_{i=1}w_i \begin{bmatrix} \begin{pmatrix} \frac{1}{2}x_i^TQx_i - \frac{1}{2} \bar{x}^TQ\bar{x} \end{pmatrix} + \begin{pmatrix} b^Tx_i -  b^T\bar{x} \end{pmatrix} - \begin{pmatrix} r_i - \bar{r} \end{pmatrix} \end{bmatrix}^2 \\
+&= \underset{Q,b,c^*}{\operatorname{min}} w \begin{bmatrix} \frac{1}{2}\tilde{x}^TQ\tilde{x} + b^T\tilde{x} - \tilde{r} \end{bmatrix}^2 \\
+\frac{\partial}{\partial b} E &= \frac{\partial}{\partial b}  w \begin{bmatrix} \frac{1}{2}\tilde{x}^TQ\tilde{x} + b^T\tilde{x} - \tilde{r} \end{bmatrix}^2 \\
+0 &= 2 w \begin{bmatrix} \frac{1}{2}\tilde{x}^TQ\tilde{x} + b^T\tilde{x} - \tilde{r} \end{bmatrix} \tilde{x}^T \\
+0 &= 2w \begin{bmatrix} \frac{1}{2}\tilde{x}^TQ\tilde{x}\tilde{x}^T + b^T\tilde{x}\tilde{x}^T - \tilde{r}\tilde{x}^T \end{bmatrix} \\
+b^* &= \begin{pmatrix} \frac{1}{2}\tilde{x}^TQ\tilde{x}\tilde{x}^T - \tilde{r}\tilde{x}^T \end{pmatrix}\begin{pmatrix} \tilde{x}\tilde{x}^T \end{pmatrix}^{-1} \\
+\end{align*}
+Now, subbing $b^*$ into the same equation, this time isolating for our last variable, $Q$,
+\begin{align*}
+\underset{Q,b^*,c^*}{\operatorname{min}} E(Q,b^*,c^*) &=
+\underset{Q,b^*,c^*}{\operatorname{min}} w \begin{bmatrix} \frac{1}{2}\tilde{x}^TQ\tilde{x} +\begin{pmatrix}\begin{pmatrix} \frac{1}{2}\tilde{x}^TQ\tilde{x}\tilde{x}^T - \tilde{r}\tilde{x}^T \end{pmatrix}\begin{pmatrix} \tilde{x}\tilde{x}^T \end{pmatrix}^{-1} \end{pmatrix}^T\tilde{x} - \tilde{r} \end{bmatrix}^2 \\
+\end{align*}
+From this form we can see that the solution will be in the form of least squares for $Q$. Since it is a maximum, $Q$ must be negative semi-definite. Therefore we can constrain the solution to be only negative eigen values, $\lambda$.

@@ -1,0 +1,104 @@
+\documentclass[10pt]{article}
+
+\usepackage{amsmath,amscd}
+\usepackage{amssymb,array}
+\usepackage{amsfonts,latexsym}
+\usepackage[mathscr]{euscript}
+\usepackage{graphicx,subfig,wrapfig}
+\usepackage{times}
+\usepackage{psfrag,epsfig}
+\usepackage{verbatim}
+\usepackage{tabularx}
+
+\newcommand{\matlab}[1]{\texttt{#1}}
+\newcommand{\setname}[1]{\textsl{#1}}
+\newcommand{\Ce}{\mathbb{C}}
+\newcommand{\Ree}{\mathbb{R}}
+\newcommand{\p}{\begin{pmatrix}}
+\newcommand{\pp}{\end{pmatrix}}
+\newcommand{\bm}{\begin{bmatrix}}
+\newcommand{\bb}{\end{bmatrix}}
+\newcommand{\eul}[1]{e^{#1}}
+
+\begin{document}
+
+\title{ \vspace{-30mm}Systems Bioengineering 3\\Homework 9}
+\author{Greg Kiar}
+
+\maketitle
+\begin{enumerate}
+\item The solution for $x_1(t)$, termed $x_1'(t)$, is as follows:
+\begin{align*}
+\dot{x_1}(t) &= b \beta (t) - a x_1(t) \\
+\dot{x_1}(t) &= b \beta_0 u(t) - a x_1(t) \\ 
+sX(s) &= \frac{b \beta_0}{s} - aX(s) \\
+X(s) &= \frac{b \beta_0}{s(s+a)} \\
+x_1'(t) &= \frac{b \beta_0}{a} \bm 1 - \eul{-at} \bb \\
+\end{align*}
+\item Using \matlab{MATLAB} and an ODE solver called \matlab{ode15s} the following list of points for $x_1''(t)$ was produced for $t=(0:1:60) sec$.
+\begin{align*}
+x_1''(t) &= \bm 0.0000, 3.1632, 4.3274, 4.7547, 4.9112, 4.9685, 4.9890, 4.9962, 4.9990, 4.9997, 4.9999, 5.0001, \\
+5.0000, 5.0000, 5.0000, 5.0000, 5.0000, 5.0000, 5.0000, 5.0000, 5.0000, 5.0000, 5.0000, 5.0000, \\
+5.0000, 5.0000, 5.0000, 5.0000, 5.0000, 5.0000, 5.0000, 5.0000, 5.0000, 5.0000, 5.0000, 5.0000, \\
+5.0000, 5.0000, 5.0000, 5.0000, 5.0000, 5.0000, 5.0000, 5.0000, 5.0000, 5.0000, 5.0000, 5.0000, \\
+5.0000, 5.0000, 5.0000, 5.0000, 5.0000, 5.0000, 5.0000, 5.0000, 5.0000, 5.0000, 5.0000, 5.0000, \\\bb 
+\end{align*}
+\item Upon creatingand testing the function in \matlab{MATLAB}, the relative error between the analytical and numerical results was $1.902 \times 10^{-4}$. This value is not quite as small at the $1 \times 10^{-6}$ recommended, but is still a very small and satisfactory value.
+\item To solve for $\dot{G^*(t)}$ at steady state we sent it to zero and isolated as follows. \\
+\begin{align*}
+\dot{G^*}(t) &= k_f \bm G_T - G^*(t) \bb \p x_3(t) \pp ^4 - k_b G^*(t) \\
+0 &= k_f \bm G_T - G^*(t) \bb \p x_3(t) \pp ^4 - k_b G^*(t) \\
+G^*(t) \p k_fx_3(t)^4 \pp &= G_T \p k_fx_3(t)^4 - k_b \pp \\
+G^*(t) &= G_T \frac{k_f x_3(t)^4 - k_b}{k_f x_3(t)^4} \\
+G^*(t) &= G_T \frac{ \p \frac{x_3(t)}{K} \pp^4}{1 + \p \frac{x_3(t)}{K} \pp ^4} \\
+\end{align*}
+Where, \\
+\begin{align*}
+K &= \p\frac{k_b}{k_f}\pp^{1/4} \\
+\end{align*}
+\item Using the given approximation for $G^*(t)$ we can obtain $\beta_c$ to be the following.
+\begin{align*}
+G^*(t) &= G_T \frac{ \p \frac{x_3(t)}{K} \pp^4}{1 + \p \frac{x_3(t)}{K} \pp ^4} \\
+G^*(t) &= G_T \Theta \p \beta > \beta_c \pp \\
+x_3 < K &\to G^*(t) \approx 0 \\
+x_3 > K &\to G^*(t) \approx G_T \\
+x_3 &= \p \frac{b}{a} \pp ^3\beta_0 \\
+K &= \p\frac{k_b}{k_f}\pp^{1/4} \\
+\p \frac{b}{a} \pp^3 \beta_0 &> \p\frac{k_b}{k_f}\pp^{1/4} \\
+\beta_0 &> \p\frac{k_b}{k_f}\pp^{1/4} \p \frac{a}{b} \pp ^3 \\
+\beta_c &= \p\frac{k_b}{k_f}\pp^{1/4} \p \frac{a}{b} \pp ^3 \\
+\end{align*}
+Subbing in values for the preceeding, we find that $\frac{\beta_0}{\beta_c} = 12.5$.
+\item Using the above approximation, we can simplify and solve for $M(t)$ and $P(t)$ as follows.
+\begin{align*}
+\dot{M}(t) &= \beta_MG_T - \alpha_M M(t) \\
+M(s) &= \frac{\beta_MG_T}{(s + \alpha_M)s} \\
+M(t) &= \frac{\beta_MG_T}{\alpha_M} \bm 1 - \eul{-\alpha_Mt} \bb \\
+\end{align*}
+And by substituting $M(t)$ into $P(t)$ to allow us to solve we find that \\
+\begin{align*}
+\dot{P}(t) &= \beta_P\frac{\beta_MG_T}{\alpha_M} \bm 1 - \eul{-\alpha_Mt} \bb - \alpha_PP(t) \\
+P(s) &= \frac{\beta_MG_T}{(s + \alpha_M)s}\frac{\beta_P}{s + \alpha_P} \\
+\end{align*}
+\begin{align*}
+P(t) &= \beta_M \beta_P G_T \bm \frac{\eul{-\alpha_Pt}}{\alpha_P(\alpha_P - \alpha_M)} - \frac{\eul{-\alpha_Mt}}{\alpha_M(\alpha_P - \alpha_M)} + \frac{1}{\alpha_M \alpha_P} \bb \\
+\end{align*}
+\item Using the equations derived above the values for $M(t)$ and $P(t)$ are as follows. \\
+\begin{align*}
+M(t) &= \bm 0.0000, 0.4758, 0.9063, 1.2959, 1.6484, 1.9673, 2.2559, 2.5171, 2.7534, 2.9672 \\ 3.1606, 3.3356, 3.4940, 3.6373, 3.7670, 3.8843, 3.9905, 4.0866, 4.1735, 4.2522 \\ 4.3233, 4.3877, 4.4460, 4.4987, 4.5464 \bb \\
+P(t) &= \bm 0.0000, 0.0242, 0.0935, 0.2037, 0.3508, 0.5311, 0.7415, 0.9789, 1.2408, 1.5247 \\ 1.8284, 2.1501, 2.4878, 2.8401, 3.2054, 3.5824, 3.9699, 4.3669, 4.7724, 5.1854 \\ 5.6053, 6.0312, 6.4625, 6.8986, 7.3391 \bb \\
+\end{align*}
+\item Upon creatingand testing the functions in \matlab{MATLAB}, the relative error between the analytical and numerical results for $M(t)$ was $6.2730 \times 10^{-4}$ and for $P(t)$ was $5.2205 \times 10^{-4}$.
+\item Using the given assumption above, we can simplify $(P(t)$ to the following. \\
+\begin{align*}
+M_T &= \frac{\beta_M G_T}{\alpha_M} \\
+\beta_P' &= \frac{\beta_P \beta_M G_T}{\alpha_M} \\
+\dot{P}(t) &= \beta_PM_T - \alpha_P P(t) \\
+P(s) &= \frac{\beta_PM_T}{(s + \alpha_P)s} \\
+P(t) &= \frac{\beta_PM_T}{\alpha_P} \bm 1 - \eul{-\alpha_Pt} \bb \\
+\end{align*}
+\item Applying this last simplification, we notice a sifnificant decrease in the quality of the result. The error observed here is $0.8827$. We can see below the plot containing both the true and approximated values.\\
+\includegraphics[width=10cm, height=10cm]{untitled.png}
+
+\end{enumerate}
+\end{document}

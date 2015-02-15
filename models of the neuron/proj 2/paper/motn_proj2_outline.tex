@@ -1,0 +1,74 @@
+% !TEX TS-program = pdflatex
+% !TEX encoding = UTF-8 Unicode
+
+% This is a simple template for a LaTeX document using the "article" class.
+% See "book", "report", "letter" for other types of document.
+
+\documentclass[11pt]{report} % use larger type; default would be 10pt
+
+\usepackage[utf8]{inputenc} % set input encoding (not needed with XeLaTeX)
+
+
+%%% PAGE DIMENSIONS
+\usepackage{geometry} % to change the page dimensions
+\geometry{a4paper} % or letterpaper (US) or a5paper or....
+
+
+\usepackage{graphicx} % support the \includegraphics command and options
+
+% \usepackage[parfill]{parskip} % Activate to begin paragraphs with an empty line rather than an indent
+
+%%% PACKAGES
+\usepackage{booktabs} % for much better looking tables
+\usepackage{array} % for better arrays (eg matrices) in maths
+\usepackage{paralist} % very flexible & customisable lists (eg. enumerate/itemize, etc.)
+\usepackage{verbatim} % adds environment for commenting out blocks of text & for better verbatim
+\usepackage{subfig} % make it possible to include more than one captioned figure/table in a single float
+\usepackage{cite}
+% These packages are all incorporated in the memoir class to one degree or another...
+
+%%% HEADERS & FOOTERS
+\usepackage{fancyhdr} % This should be set AFTER setting up the page geometry
+\pagestyle{fancy} % options: empty , plain , fancy
+\renewcommand{\headrulewidth}{0pt} % customise the layout...
+\lhead{}\chead{}\rhead{}
+\lfoot{}\cfoot{\thepage}\rfoot{}
+
+%%% SECTION TITLE APPEARANCE
+\usepackage{sectsty}
+\allsectionsfont{\sffamily\mdseries\upshape} % (See the fntguide.pdf for font help)
+% (This matches ConTeXt defaults)
+
+%%% ToC (table of contents) APPEARANCE
+\usepackage[nottoc,notlof,notlot]{tocbibind} % Put the bibliography in the ToC
+\usepackage[titles,subfigure]{tocloft} % Alter the style of the Table of Contents
+\renewcommand{\cftsecfont}{\rmfamily\mdseries\upshape}
+\renewcommand{\cftsecpagefont}{\rmfamily\mdseries\upshape} % No bold!
+
+
+
+\title{Models of the Neuron: Project 2 Proposal}
+\author{Greg Kiar}
+%\date{} % Activate to display a given date or no date (if empty),
+         % otherwise the current date is printed 
+
+\begin{document}
+\maketitle
+
+\section{Introduction}
+
+Connectomics is a young field which aims to produce connectomes, complete connectivity maps, for living organisms. The \emph{Caenorhabditis elegans} (\emph{C. elegans}) roundworm is studied in this field because of its simple, and small nervous system consisting of only $302$ neurons \cite{White1986,Dunn2003}. The goal of the research conducted as a part of this paper is to understand neural network dynamics of \emph{C. elegans} and what effect intial conditions have on motor neuron response. The research conducted will build off of work studying the effect of ablations of specific regions of interconnected neurons on forward motion \cite{Kunert2014}.
+
+\section{Background}
+
+In Kunert et al., 2014 \cite{Kunert2014} a network is constructed of $279$ neurons of \emph{C. elegans} based on known connectome data \cite{Varshney2011}. Here, only $279$ somatic neurons of the $302$ total neurons were included in the model; those exclused were done so by the prescription of \cite{Varshney2011} and the set comprised of pharyngeal neurons as well as those who were isolates. Kunert et al. observe the relationships between motor neuron activation and the ablation of two regions of interneurons AVA and AVB much like was done experimentally in \cite{Chalfie1985} to show their model's validity.
+
+In unrelated work, Prinze et al., 2004 \cite{Prinz2004} show that disparate patterns of neural network activity can produce nearly identical neural activity. This result will be qualitatively applied to the Kunert et al. model developed above in this project.
+
+
+Using the network and neuron structure as implemented in \cite{Kunert2014}, this work aims to assess the motor neuron response of \emph{C. elegans} for random neuron single and pair ablation. Neurons will be selected both individually and in physiologically symmetric sets, and will be removed from the network signifying ablation. What this work aims to observe is if the AVB interneurons alone are responsible for transduction of forward moving responses to the motor neuron, or if other ablations have similar results. This work will identify a set of interneurons that have a similar effect on motor response to the AVB neuron pair.
+
+\bibliography{mine}{}
+\bibliographystyle{plain}
+
+\end{document}

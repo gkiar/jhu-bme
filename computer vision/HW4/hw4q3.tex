@@ -1,0 +1,52 @@
+\begin{align*}
+I(x_u, y+v, t+ 1) &= a I(x,y,t) + b
+\end{align*}
+Notice that the above matches the form
+\begin{align*}
+J(x,y,t) &= a I(x,y,t) + b
+\end{align*}
+Recognizing the above as a standard affine transform we can conclude that
+\begin{align*}
+b &= \bar{J} - a \bar{I}\\
+a &= \tilde{J}\tilde{I}^T(\tilde{I}\tilde{I}^T)^{-1}
+\end{align*}
+Where,
+\begin{align*}
+J &= I(x+u, y+v, t+1)\\
+\tilde{J} &= J - \bar{J}\\
+\tilde{I} &= I - \bar{I}
+\end{align*}
+Now, applying the brightness constancy contraint (BCC) and making the assumption of small motion,
+\begin{align*}
+I(x+u,y+v,t+1) &= aI(x, y, t) +b + uI_x + vI_y \\
+0 &= aI(x,y,t) + b - I(x+u, y+v,t+1) + uI_x + vI_y \\
+0 &= (a-1)I(x, y, t) + b (I(x, y, t) - I(x+u,y+v,t+1)) + uI_x + vI_y \\
+0 &= (a-1)I(x, y, t) + b + I_t + uI_x + vI_y\\
+0 &= (a-1)I(x, y, t) + b + I_t + \nabla I \begin{bmatrix} u & v \end{bmatrix} \\
+\end{align*}
+From here, we have 1 equation and 2 unknowns, $u$ and $v$. We now make an assumption that nearby points have a constant optical flow, $u$ and $v$, and solve for multiple points at the same time. We will choose a $5$x$5$ neighborhood around our point of interest.
+\begin{align*}
+0 &= (a-1)I(p_i) + b + I_t(p_i) + \nabla I(p_i)\begin{bmatrix}u & v\end{bmatrix} \\
+\begin{bmatrix} I_x(p_1) & I_y(p_1) \\ I_x(p_2) & I_y(p_2) \\ \vdots & \vdots \\ I_x(p_{25}) & I_y(p_{25}) \end{bmatrix}
+\begin{bmatrix} u \\ v \end{bmatrix} &= - \begin{bmatrix} I_t(p_1) \\ I_t(p_2) \\ \vdots \\ I_t(p_{25}) \end{bmatrix}
+- (a-1) \begin{bmatrix} I(p_1) \\ I(p_2) \\ \vdots \\ I(p_{25}) \end{bmatrix} - \begin{bmatrix} b(p_1) \\ b(p_2) \\ \vdots \\ b(p_{25}) \end{bmatrix} \\
+\text{Where we notice the above equation takes the form}\\
+A x &= b
+\end{align*}
+This form is commonly seen and can be solved using the least squares method to give the following general and unque solutions, respectively
+\begin{align*}
+\min \lVert A&x - b \rVert^2 \\
+A^TAx &= A^Tb \\
+x &= (A^TA)^{-1}A^Tb
+\end{align*}
+\begin{align*}
+\min \begin{Vmatrix} \begin{bmatrix} I_x(p_1) & I_y(p_1) \\ I_x(p_2) & I_y(p_2) \\ \vdots & \vdots \\ I_x(p_{25}) & I_y(p_{25}) \end{bmatrix}
+\begin{bmatrix} u \\ v \end{bmatrix} + \begin{pmatrix}\begin{bmatrix} I_t(p_1) \\ I_t(p_2) \\ \vdots \\ I_t(p_{25}) \end{bmatrix}
+- (a-1) \begin{bmatrix} I(p_1) \\ I(p_2) \\ \vdots \\ I(p_{25}) \end{bmatrix} - \begin{bmatrix} b(p_1) \\ b(p_2) \\ \vdots \\ b(p_{25}) \end{bmatrix} \end{pmatrix} \end{Vmatrix}^2   \\
+\end{align*}
+\begin{align*}
+\begin{bmatrix}\sum I_x^2 & \sum I_xI_y \\ \sum I_xI_y & \sum I_y^2\end{bmatrix} \begin{bmatrix} u \\ v \end{bmatrix} &= - \begin{bmatrix} \sum I_xQ \\ \sum I_yQ \end{bmatrix}\\
+\text{Where, } \\
+Q &= \begin{bmatrix} I_t(p_1) \\ I_t(p_2) \\ \vdots \\ I_t(p_{25}) \end{bmatrix}
+- (a-1) \begin{bmatrix} I(p_1) \\ I(p_2) \\ \vdots \\ I(p_{25}) \end{bmatrix} - \begin{bmatrix} b(p_1) \\ b(p_2) \\ \vdots \\ b(p_{25}) \end{bmatrix}
+\end{align*}
