@@ -1,6 +1,6 @@
 # JHU BME MSE Coursework
 
-This repo is intended to house coursework that I (and perhaps some of my peers) complete during our studies @ JHU, and share them with others. Since this is personal work, I've imposed an Apache license which states that you can use whatever you want but you must give credit (i.e. no plagiarizing).
+This repo is intended to house coursework that my peers and I complete during our studies @ JHU, and share it with others. Since this is personal work, I've imposed an Apache license to the repository which states that you can use whatever you want but you must give credit (i.e. plagiarize at your own risk).
 
 The courses documented here are: <br/>
 
@@ -14,7 +14,13 @@ Coming soon: <br/>
 
 EN.580.694: Statistical Connectomics (Spring 2015, gkiar) (work is in another repo, https://github.com/Statistical-Connectomics-Sp15/coursework)
 
-If you have courses that you'd like to share your work for and possibly help out your peers, please send me a line to contribute!
+If you have courses and work that you'd like to share and possibly help out your peers, please send me an email to contribute containing the following:
+* Course Code (EN.###.###)
+* Course Name (Learning Things 101)
+* Semester Taken (Spring 2020)
+* A zip/tar/gzip file containing your work (myclass.zip)
+
+Your peers thank you!
 
 Cheers,
 G
