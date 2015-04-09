@@ -18,7 +18,7 @@ hold on
 plot(-2:0.01:2, p(-2:0.01:2,rrange(50), 0.0))
 plot(-2:0.01:2, p(-2:0.01:2,rrange(50), 0.2))
 legend('e=-0.2','e= 0.0','e= 0.2');
-xlabel('Stimulus position');
+xlabel('Retinal stimulus position');
 ylabel('Neuron response');
 title('Response of PPC isolate neuron');
 
@@ -45,3 +45,26 @@ plot(0:20, ps(50,:));
 xlabel('Time point');
 ylabel('Neuron response');
 title('Neuron response of the central neuron in a network');
+
+%% Part 3
+r=-2:0.01:2;
+e=0;
+figure (3)
+prs = pt(20,r,rrange(50),e,ps);
+plot(r, prs);
+xlabel('Reginal stimulatus position');
+ylabel('Neuron response');
+title('Tuning function of neuron in a network');
+
+%% Part 4
+e=-2:0.1:2;
+
+figure (4)
+for q = 1:length(e)
+    pre(q,:) = pt(20,r,rrange(50),e(q),ps);
+    plot(r, pre(q,:));
+    hold on
+end
+xlabel('Reginal stimulatus position');
+ylabel('Neuron response');
+title('Tuning function of neuron in a network');
