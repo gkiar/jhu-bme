@@ -69,7 +69,7 @@ for w = 1:length(e)
 end
 
 plot(r, prss(3,:));
-xlabel('Reginal stimulatus position');
+xlabel('Retinal stimulatus position');
 ylabel('Neuron response');
 title('Tuning function of neuron in a network');
 
@@ -86,7 +86,7 @@ for q = 1:length(e)
     hold on 
 end
 
-xlabel('Reginal stimulatus position');
+xlabel('Retinal stimulatus position');
 ylabel('Neuron response');
 title('Tuning function of neuron in a network');
 legend(lgs)
