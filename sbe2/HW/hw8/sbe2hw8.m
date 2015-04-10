@@ -48,24 +48,44 @@ title('Neuron response of the central neuron in a network');
 
 %% Part 3
 r=-2:0.01:2;
-e=0;
+e=-0.2:0.1:0.2;
+lgs = {};
+
 figure (3)
-prs = pt(20,r,rrange(50),e,ps);
-plot(r, prs);
+
+for w = 1:length(e)
+    lgs{w} = strcat('e=', num2str(e(w)));
+
+    for z = 1:length(r)
+        ps = p(r(z), rrange, e(w))';
+        for q=1:20
+            for qq=1:100
+                ps(qq,q+1) = pt(q,r(z),rrange(qq),e(w),ps)';
+            end
+        end
+        prs(z) = ps(50, end);
+    end
+    prss(w,:) = prs();
+end
+
+plot(r, prss(3,:));
 xlabel('Reginal stimulatus position');
 ylabel('Neuron response');
 title('Tuning function of neuron in a network');
 
 %% Part 4
-e=-0.2:0.1:0.2;
-lgs = {};
+
 figure (4)
+% for q = 1:length(e)
+%     pre(q,:) = pt(20,r,rrange(50),e(q),ps);
+%     plot(r, pre(q,:));
+%     hold on
+% end
 for q = 1:length(e)
-    pre(q,:) = pt(20,r,rrange(50),e(q),ps);
-    plot(r, pre(q,:));
-    lgs{q} = strcat('e=', num2str(e(q)));
-    hold on
+    plot(r, prss(q,:));
+    hold on 
 end
+
 xlabel('Reginal stimulatus position');
 ylabel('Neuron response');
 title('Tuning function of neuron in a network');
