@@ -57,14 +57,16 @@ ylabel('Neuron response');
 title('Tuning function of neuron in a network');
 
 %% Part 4
-e=-2:0.1:2;
-
+e=-0.2:0.1:0.2;
+lgs = {};
 figure (4)
 for q = 1:length(e)
     pre(q,:) = pt(20,r,rrange(50),e(q),ps);
     plot(r, pre(q,:));
+    lgs{q} = strcat('e=', num2str(e(q)));
     hold on
 end
 xlabel('Reginal stimulatus position');
 ylabel('Neuron response');
 title('Tuning function of neuron in a network');
+legend(lgs)
